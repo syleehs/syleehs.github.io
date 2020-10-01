@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial !important;
+}
+:root{
+    font-size: 16px;
+    --text-primary: rgb(255,255,255);
+    --bg-primary: rgb(23, 23, 23);
+    --bg-secondary: black;
+    --sb-primary: rgb(93, 2, 136);
+    --sb-secondary: rgb(20, 20, 73);
+    --transition-speed: 200ms;
+}
+
+/* Scroll bar */
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+body::-webkit-scrollbar-track{
+    background: var(--sb-secondary)
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--sb-primary)
+}
+
+/* Navigation menu */
+.navbar{
+    z-index: 1;
+    position: fixed;
+    background: var(--bg-primary);
+    transition:width var(--transition-speed) ease;
+}
+
+.navbar-nav{
+    list-style: none;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+li.nav-item{
+    width:100%;
+}
+
+li.nav-item:last-child{
+    margin-top:auto;
+}
+
+.nav-link {
+    display:flex;
+    align-items:center;
+    height: 5rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed)
+}
+.nav-link:hover{
+    filter:grayscale(0%) opacity(1);
+    background: var(--sb-primary);
+    color: var(--text-primary);
+}
+
+.link-text{
+    display:none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    min-width: 3rem;
+    width:3rem;
+    height:3rem;
+    margin-left: 1rem;
+}
+
+.logo {
+    font-weight:bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-primary);
+    background: var(--bg-primary);
+    width:100%;
+    letter-spacing: 0.3ch;
+}
+
+.logo svg{
+    transform: rotate(0deg);
+    transition: transform var(--transition-speed);
+}
+
+.navbar:hover .logo svg{
+    transform: rotate(-180deg);
+}
+
+/* Background */
+.background{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    display: block;
+    background: var(--bg-secondary);
+    height: 100%;
+    transform:scale(1.25);
+}
+
+/* Gallery grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    min-height: 100vh;
+}
+
+.img-container{
+    overflow: hidden;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.25s ease-out;
+    cursor: pointer;
+}
+
+.modal{
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25sec ease-out;
+}
+
+.modal p{
+    color: white;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+.modal.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.full-img {
+    position: absolute;
+    transition: all 1s ease-out;
+}
+
+
+/* Small screen */
+@media only screen and (max-width: 600px){
+    /* Nav bar */
+    .navbar{
+        bottom: 0;
+        height: 5rem;
+        width: 100vw;
+    }
+    .logo{
+        display: none;
+    }
+    .navbar-nav{
+        height:5rem;
+        width:100vw;
+        flex-direction: row;
+    }
+    /* Grid */
+    .gallery{
+        grid-gap: 1rem;
+        padding-bottom: 5rem;
+    }
+    .full-img{ 
+        width: 100vw;
+        top:10%;
+    }
+    
+}
+/* Large screen */
+@media only screen and (min-width: 600px){
+    /* Nav bar */
+    .navbar{
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+    .navbar:hover{
+        width:16rem;
+    }
+    .navbar:hover .link-text{
+        display: block;
+        transition: opacity var(--transition-speed)
+    }
+    /* Grid */
+    .gallery{
+        padding-left: max(5rem, 7%);
+        padding-right: max(1rem, 5%);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        grid-gap: 2rem;
+    }
+    .gallery > div {
+        background-color: rgba(200, 200, 200, 0.3);
+        padding: 3%;
+    }
+    
+    .img-container img:hover{
+        transform: scale(1.1);
+    }
+    .full-img{ 
+        height: 70%;
+        transform: translate(-50%, -50%) scale(0.5);
+        top: 50%;
+        left: 50%;
+    }
+    .full-img.open{
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
