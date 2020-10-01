@@ -3,8 +3,6 @@ const previews = document.querySelectorAll(".gallery img");
 const original = document.querySelector(".full-img");
 const caption = document.querySelector(".caption");
 
-document.body.style.backgroundImage = "/Images/Background/Calabogie-3"
-
 previews.forEach(preview => {
     preview.addEventListener('click', () =>{
         modal.classList.add('open');
