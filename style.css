@@ -71,6 +71,7 @@ li.nav-item:last-child{
 }
 
 .nav-link svg {
+    min-width: 3rem;
     width:3rem;
     height:3rem;
     margin-left: 1rem;
