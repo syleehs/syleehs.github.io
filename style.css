@@ -83,7 +83,7 @@
 
 .gallery > div {
     background-color: rgba(200, 200, 200, 0.3);
-    padding: 4%;
+    padding: 3%;
 }
 
 .img-container{
@@ -93,7 +93,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all 0.3s ease-out;
+    transition: all 0.75s ease-out;
     cursor: pointer;
 }
 .img-container img:hover{
@@ -132,7 +132,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.5);
-    transition: all 0.25s ease-out;
+    transition: all 1s ease-out;
 }
 
 .full-img.open{
