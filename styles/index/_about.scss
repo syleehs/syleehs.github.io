@@ -1,13 +1,12 @@
-.skills-container{
-    background-color: #485461;
-    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+.about{
+    min-height: 70vh;
+    margin:auto;
     position: relative;
     overflow: hidden;
 }
 
-.skills{
-    min-height: 90vh;
-    width: 80%;
+.about-container{
+    padding: 15rem 10% 0 10%;
     margin: auto;
     display: flex;
     flex-direction: column;

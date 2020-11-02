@@ -1,0 +1,17 @@
+.experience{
+    position: relative;
+    overflow: hidden;
+    min-height: 70vh;
+}
+.experience-container{
+    padding: 15rem 10% 0 10%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 2fr 1fr;
+    ul{
+        grid-row: 1/2;
+        grid-template-columns: 2/3;
+        align-self: flex-end;
+    }
+}

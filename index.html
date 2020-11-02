@@ -9,60 +9,75 @@
 </head>
 <body>
   <main>
+    <div class="side-nav">
+      <ul>
+        <li><a class="active" href="#intro">Intro</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </div> 
     <div class="nav-container">
       <nav>
         <a href=""><h1>Yannick Lee-Hon-Siong</h1></a>
         <ul>
           <li><a href="">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
           <li><a href="/Photography/home.html">Photos</a></li>
         </ul>
       </nav>
     </div>
-    <section class="about">
-      <div id="about" class="showcase">
-        <img class="headshot" src="../img/headshot_marrakech.JPG" alt="">
-        <div class="info">
-          <ul>
-            <h4>I'm Yannick Lee</h4>
-            <p>Software Developer & Software Tester</p>
-          </ul>
-        </div>
-        <button><a href="#about">Learn More</a></button>
-        <div class="icons"> 
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/leeyannick/"><img src="./img/linkedin-logo.png" alt=""></a>
-            </li>
-            <li>
-              <a href="https://github.com/syleehs"><img src="./img/github-logo.png" alt=""></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <div class="skills-container">
-      <section class="skills">
-        <h2>Skills</h2>
-        <div class="cards">
-          <div class="card">
-            <h4>4k 60fps</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
+    <div class="page-sections">
+      <section class="intro">
+        <div id="intro" class="intro-container">
+          <img class="headshot" src="../img/headshot_marrakech.JPG" alt="">
+          <div class="info">
+            <ul>
+              <p>I'm Yannick Lee</p>
+              <h4>Software Developer & Software Tester</h4>
+            </ul>
           </div>
-          <div class="card">
-            <h4>4k 60fps</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="card">
-            <h4>4k 60fps</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
+          <button><a href="#about">Learn More</a></button>
+          <div class="icons"> 
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/leeyannick/"><img src="./img/linkedin-logo.png" alt=""></a>
+              </li>
+              <li>
+                <a href="https://github.com/syleehs"><img src="./img/github-logo.png" alt=""></a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-    </div>
-    <div class="more">
-
+      <div class="divider"></div>
+      <section class="about">
+        <div id="about" class="about-container">
+          <h2>About Me</h2>
+          <p>I am recent </p>
+          <div class="cards">
+            <div class="card">
+              <h4>Automation</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card">
+              <h4>Testing</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card">
+              <h4>Development</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section class="experience">
+        <div id="experience" class="experience-container">
+          <ul>
+            <h2>Experience</h2>
+            <p></p>
+          </ul>
+        </div>
+      </section>
     </div>
     <footer>
       <ul>
@@ -75,5 +90,7 @@
       </ul>
     </footer>
   </main>
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </body>
 </html>

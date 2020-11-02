@@ -1,6 +1,13 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    //background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../../Images/Full/tobermory_lake_full.jpg");
+    background-image: linear-gradient(315deg, black 0%, #28313b 74%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 50%;
+    z-index: -1;
 }
 *{
     margin: 0;
@@ -9,6 +16,61 @@ html{
     font-family: 'Montserrat', 'sans-serif';
     font-size: 2rem;
 }
+
+nav{
+    background: #131313;
+    width: 100vw;
+    z-index: 1;
+    padding: 3rem 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    ul{
+        display:flex;
+        justify-content: space-between;
+        list-style: none;
+        flex: 1;
+    }
+    a{
+        flex: 3;
+        position: relative;
+    }
+}
+
+.side-nav{
+    position: fixed;
+    z-index: 1;
+    display:flex;
+    flex-direction: row;
+    right: 5rem;
+    top: 15rem;
+    ul{
+        list-style: none;
+        li{
+            font-size: 5rem;
+        }
+    }
+    ul li a.active{
+        color: #ff6961;
+    }
+    li:active, li:hover{
+        text-decoration:none;
+        a{
+            color:#ff6961;
+        }
+    }
+}
+
+.divider{
+    background: rgba(#ff6961, 0.55);
+    width: 40rem;
+    height: 0.5rem;
+    border-radius: 5px;
+    margin:auto;
+}
+
 body{
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -39,18 +101,11 @@ a{
     color:white;
     text-decoration: none;
 }
-.about{
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../../Images/Full/tobermory_lake_full.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-y: 50%;
-    z-index: -1;
-}
 
 @import "intro";
-@import "skills";
+@import "about";
 @import "footer";
+@import "experience";
 
 
 @media screen and (max-width: 1200px){
