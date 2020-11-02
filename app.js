@@ -1,5 +1,15 @@
 const sidenav = document.querySelectorAll(".side-nav a");
 const pagesections = document.querySelectorAll(".page-sections section");
+const learnmore = document.querySelector("button a");
+
+learnmore.addEventListener('click', ()=>{
+    (sidenav.forEach(item=>{
+        item.removeAttribute('class');
+        if (item.getAttribute('href')==learnmore.getAttribute('href')){
+            item.setAttribute('class','active');
+        };
+    }));
+});
 
 sidenav.forEach(item => {
     item.addEventListener('click', () =>{
