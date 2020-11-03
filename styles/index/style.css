@@ -173,6 +173,7 @@ a {
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 50%;
   width: 25rem;
+  height: 25rem;
   margin-top: auto;
   overflow: hidden;
   position: relative;
