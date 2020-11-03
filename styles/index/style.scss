@@ -55,10 +55,16 @@ nav{
     ul li a.active{
         color: #ff6961;
     }
-    li:active, li:hover{
+    li:active{
         text-decoration:none;
         a{
             color:#ff6961;
+        }
+    }
+    li:hover{
+        text-decoration: none;
+        a{
+            color: gray;
         }
     }
 }
@@ -106,6 +112,7 @@ a{
 @import "about";
 @import "footer";
 @import "experience";
+@import "projects";
 
 
 @media screen and (max-width: 1200px){

@@ -81,12 +81,20 @@ nav a {
   color: #ff6961;
 }
 
-.side-nav li:active, .side-nav li:hover {
+.side-nav li:active {
   text-decoration: none;
 }
 
-.side-nav li:active a, .side-nav li:hover a {
+.side-nav li:active a {
   color: #ff6961;
+}
+
+.side-nav li:hover {
+  text-decoration: none;
+}
+
+.side-nav li:hover a {
+  color: gray;
 }
 
 .divider {
@@ -136,7 +144,7 @@ a {
 }
 
 .intro {
-  min-height: 70vh;
+  min-height: 80vh;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -161,8 +169,11 @@ a {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
   width: 30rem;
   height: 30rem;
+  overflow: hidden;
   position: relative;
   border-radius: 50%;
   -o-object-fit: cover;
@@ -170,8 +181,6 @@ a {
   -ms-grid-column-align: center;
       justify-self: center;
   margin-top: auto;
-  padding: 1rem 1rem 1rem 1rem;
-  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .intro-container .icons {
@@ -205,8 +214,6 @@ a {
 }
 
 .intro-container .icons ul img {
-  -webkit-filter: brightness(100);
-          filter: brightness(100);
   width: 3rem;
 }
 
@@ -303,14 +310,14 @@ a {
 }
 */
 .about {
-  min-height: 70vh;
+  min-height: 80vh;
   margin: auto;
   position: relative;
   overflow: hidden;
 }
 
 .about-container {
-  padding: 15rem 10% 0 10%;
+  padding: 5rem 10% 0 10%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,19 +408,17 @@ footer h1 {
 }
 
 footer img {
-  -webkit-filter: brightness(100);
-          filter: brightness(100);
   width: 3rem;
 }
 
 .experience {
   position: relative;
   overflow: hidden;
-  min-height: 70vh;
+  min-height: 80vh;
 }
 
 .experience-container {
-  padding: 15rem 10% 0 10%;
+  padding: 5rem 10% 0 10%;
   margin: auto;
   display: -ms-grid;
   display: grid;
@@ -431,6 +436,16 @@ footer img {
       grid-template-columns: 2/3;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.projects {
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+}
+
+.projects-container {
+  padding: 5rem 10% 0 10%;
 }
 
 @media screen and (max-width: 1200px) {
