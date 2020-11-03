@@ -17,14 +17,13 @@
         grid-column: 1/2;
         padding: 1rem 1rem 1rem 1rem;
         background-color:   rgba(0,0,0,0.75);
-        width: 30rem;
-        height: 30rem;
+        border-radius: 50%;
+        width:25rem;
+        margin-top: auto;
         overflow: hidden;
         position: relative;
-        border-radius: 50%;
         object-fit: cover;
         justify-self: center;
-        margin-top: auto;
     }
 
     .icons{
