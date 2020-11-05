@@ -399,7 +399,8 @@ a {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  margin-left: 5rem;
   width: 15rem;
   height: 4rem;
   border-radius: 0.5rem;
@@ -526,7 +527,6 @@ footer img {
 
 .projects-container .project-card {
   min-width: 35%;
-  margin: auto;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -534,8 +534,7 @@ footer img {
           align-items: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 5rem 2rem 0rem 2rem;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   -ms-grid-rows: 25rem 10rem 30rem;

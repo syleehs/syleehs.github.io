@@ -17,13 +17,11 @@
         border-color: white;
     }
     .project-card{
-        min-width:35%;    
-        margin:auto;
+        min-width:35%;
         display:grid;
         align-items: center;
         justify-self: center;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin: 5rem 2rem 0rem 2rem;
         grid-template-columns: 100%;
         grid-template-rows: 25rem 10rem 30rem;
         img{ 
