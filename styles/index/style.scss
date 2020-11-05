@@ -16,7 +16,12 @@ html{
     font-family: 'Montserrat', 'sans-serif';
     font-size: 2rem;
 }
-
+a.anchor {
+    display: block;
+    position: relative;
+    top: -12rem;
+    visibility: hidden;
+}
 nav{
     background: #131313;
     width: 100vw;
@@ -37,6 +42,15 @@ nav{
         flex: 3;
         position: relative;
     }
+    h1{
+        font-family: 'lobster', cursive;
+        font-weight: normal;
+    }
+}
+
+.divider-vertical{
+    background: rgba(#ff6961, 0.55);
+    border-radius: 5px;
 }
 
 .side-nav{
@@ -46,6 +60,11 @@ nav{
     flex-direction: row;
     right: 5rem;
     top: 15rem;
+    .divider-vertical{
+        height: 19rem;
+        width: 0.5rem;
+        margin: auto 1.5rem auto auto;
+    }
     ul{
         list-style: none;
         li{
@@ -69,7 +88,7 @@ nav{
     }
 }
 
-.divider{
+.divider-horizontal{
     background: rgba(#ff6961, 0.55);
     width: 40rem;
     height: 0.5rem;
@@ -83,13 +102,12 @@ body{
 }
 h1{
     font-size: 2.5rem;
-    font-family: 'Lobster', cursive;
-    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
 }
 h2{
-    font-size: 8rem;
-    font-family: 'Lobster', cursive;
-    font-weight: lighter;
+    font-size: 6rem;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 1rem;
 }
 h3{
     font-size: 3.5rem;
@@ -111,7 +129,6 @@ a{
 @import "intro";
 @import "about";
 @import "footer";
-@import "experience";
 @import "projects";
 
 

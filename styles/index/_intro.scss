@@ -78,11 +78,15 @@
         height: 4rem;
         border-radius: 0.5rem;   
         border: none;
-        color:white;
-        background-color: #ff6961;
+        background-color: #ff5561;
+    }
+    button:hover{
+        cursor: pointer;
+        a{
+            color:black;
+        }
     }
 }
-/*
 @media screen and (max-width: 800px){
     nav{
         padding-left: 3rem;
@@ -117,4 +121,3 @@
         }
     }
 }
-*/  
