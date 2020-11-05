@@ -279,13 +279,16 @@ a {
   font-size: 2.5rem;
 }
 
-.intro-container button {
+.intro-container .learnmore {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+}
+
+.intro-container .learnmore button {
   margin-top: 1rem;
   width: 15rem;
   height: 4rem;
@@ -406,14 +409,23 @@ a {
   background-color: transparent;
 }
 
+.about-container button a {
+  font-size: 2rem;
+  border-bottom: none;
+  color: white;
+}
+
 .about-container button:hover {
   cursor: pointer;
+}
+
+.about-container button:hover a {
   color: #ff6961;
 }
 
 .about-container a {
   color: #ff6961;
-  text-decoration: underline;
+  border-bottom: 1px solid grey;
   font-size: 2.25rem;
 }
 
@@ -488,47 +500,101 @@ footer img {
   position: relative;
   overflow: hidden;
   min-height: 80vh;
+  padding: 5rem 12% 0 10%;
+}
+
+.projects .github-logo {
+  width: 5rem;
 }
 
 .projects-container {
-  padding: 5rem 10% 0 10%;
-}
-
-.projects-container .cards {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projects-container .photography {
+  border-color: white;
+}
+
+.projects-container .project-card {
+  min-width: 70rem;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 25rem 10rem 30rem;
+      grid-template-rows: 25rem 10rem 30rem;
+}
+
+.projects-container .project-card img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  height: auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.projects-container .project-card .camera {
+  padding-left: 4rem;
+  max-width: 50rem;
+  max-height: 40rem;
+}
+
+.projects-container .project-card .shout-logo {
+  max-width: 22rem;
+  margin-bottom: 6rem;
+}
+
+.projects-container .project-card h4 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.projects-container .project-card h4 a {
+  color: #ff6961;
+  font-size: 4rem;
+}
+
+.projects-container .project-card p {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 2.5rem;
+  font-weight: normal;
   color: white;
 }
 
-.projects-container .cards .card {
-  margin: 0rem 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  border-radius: 2rem;
-  overflow: hidden;
+.projects-container .project-card p a {
+  color: #ff6961;
+  border-bottom: 1px solid grey;
+  font-size: 2.5rem;
 }
 
-.projects-container .cards h4 {
-  margin: 1rem 0rem;
+.projects-container ul {
+  padding: 4rem;
 }
 
-.projects-container .cards p {
-  padding: 2rem;
-}
-
-.projects-container .cards img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.projects-container li {
+  list-style: none;
 }
 
 @media screen and (max-width: 1200px) {

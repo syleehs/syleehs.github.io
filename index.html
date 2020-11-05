@@ -20,10 +20,6 @@
     <div class="nav-container">
       <nav>
         <a href=""><h1>Yannick Lee-Hon-Siong</h1></a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="/Photography/home.html">Photos</a></li>
-        </ul>
       </nav>
     </div>
     <div class="page-sections">
@@ -36,7 +32,9 @@
               <h4>Software Developer & Software Tester</h4>
             </ul>
           </div>
-          <button><a href="#about">Learn More</a></button>
+          <div class="learnmore">
+            <button><a href="#about">Learn More</a></button>
+          </div>
           <div class="icons"> 
             <ul>
               <li>
@@ -74,34 +72,32 @@
               </div>
             </li>
             <li><p>My hobbies include Mechanical Keyboards, Fountain Pens, Sightseeing and Traveling.</p></li>
-            <li><p>During my spare time I like to go Bouldering (Rock Climbing), take <a href="./Photography/home.html">Pictures</a> and Playing Video Games.</p></li>
+            <li><p>During my spare time I like to go Bouldering (Rock Climbing), take <a class="picture_project" href="#photography">Pictures</a> and playing Video Games with friends.</p></li>
             <li>
-              <a href="./files/YannickLee_Resume.pdf" download="YannickLee_Resume"><button type="submit">Resume</button></a>
+              <button type="submit"><a href="./files/YannickLee_Resume.pdf" download="YannickLee_Resume">Resume</a></button>
             </li>
           </ul>
         </div>
       </section>
       <div class="divider-horizontal"></div>
       <section class="projects">
+        <h2>Projects <a href="https://github.com/syleehs"><img class="github-logo" src="./img/github-logo.svg" alt=""></a></h2>
         <div id="projects" class="projects-container">
-          <ul>
-            <h2>Projects</h2>
-            <div class="cards">
-              <div class="card">
-                <h4>Automation</h4>
-                
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="card">
-                <h4>Testing</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="card">
-                <h4>Development</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
+          <div class="photography">
+            <div id="photography" class="project-card">
+                <img class="camera" src="./img/camera.png" alt="">
+                <h4>Photography</h4>
+                <p>I have built a <a href="./Photography/home.html">website</a> to display pictures, which can zoom in on mouse hovers.<br> The website also displays the full resolution image on selection.<br>Built using html, css, and javascript</p>
             </div>
-          </ul>
+          </div>
+          <div class="project-card">
+            <img class="shout-logo" src="./img/shout_it_logo.png" alt="">
+            <h4><a href="https://github.com/CP317S18">Shout.it</a></h4>
+            <p>Software Engineering project, in collaboration with my colleagues. 
+              <br>The application creates a chatroom with nearby devices through a Bluetooth Mesh network
+              <br>My focus was building the Android platform.
+            </p>
+          </div>
         </div>
       </section>
     </div>

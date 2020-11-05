@@ -1,6 +1,7 @@
 const sidenav = document.querySelectorAll(".side-nav a");
 const pagesections = document.querySelectorAll(".page-sections section");
-const learnmore = document.querySelector("button a");
+const learnmore = document.querySelector(".learnmore a");
+const picturebutton = document.querySelector(".picture_project")
 
 learnmore.addEventListener('click', ()=>{
     (sidenav.forEach(item=>{
@@ -48,4 +49,9 @@ function isElementInViewport (el) {
         //rect.bottom <= (window.innerHeight) && /* or $(window).height() */
         //rect.right <= (window.innerWidth) /* or $(window).width() */
     );
-}
+};
+
+picturebutton.addEventListener('click', () =>{
+    $(".photography").fadeOut(500);
+    $(".photography").fadeIn(500);
+});
