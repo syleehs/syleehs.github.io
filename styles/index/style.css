@@ -525,7 +525,7 @@ footer img {
 }
 
 .projects-container .project-card {
-  min-width: 70rem;
+  min-width: 55rem;
   margin: auto;
   display: -ms-grid;
   display: grid;
@@ -543,15 +543,21 @@ footer img {
 }
 
 .projects-container .project-card img {
+  margin: auto;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   height: auto;
+  max-height: 25rem;
+  max-width: 25rem;
   -ms-grid-column-align: center;
       justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .projects-container .project-card .camera {
+  margin: 0;
   padding-left: 4rem;
   max-width: 50rem;
   max-height: 40rem;
@@ -563,6 +569,7 @@ footer img {
 }
 
 .projects-container .project-card h4 {
+  font-size: 3.5rem;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -572,7 +579,8 @@ footer img {
 
 .projects-container .project-card h4 a {
   color: #ff6961;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  border-bottom: 1px solid grey;
 }
 
 .projects-container .project-card p {

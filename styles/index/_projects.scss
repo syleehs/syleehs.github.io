@@ -17,7 +17,7 @@
         border-color: white;
     }
     .project-card{
-        min-width:70rem;    
+        min-width:55rem;    
         margin:auto;
         display:grid;
         align-items: center;
@@ -26,12 +26,17 @@
         margin-right: 2rem;
         grid-template-columns: 100%;
         grid-template-rows: 25rem 10rem 30rem;
-        img{
+        img{ 
+            margin:auto;
             grid-row: 1/2;
             height: auto;
+            max-height: 25rem;
+            max-width: 25rem;
             justify-self: center;
+            align-self: flex-end;
         }
         .camera{
+            margin: 0;
             padding-left: 4rem;
             max-width: 50rem;
             max-height: 40rem;
@@ -41,11 +46,13 @@
             margin-bottom:6rem;
         }
         h4{
+            font-size: 3.5rem;
             grid-row:2/3;
             justify-self: center;
             a{
                 color:#ff6961;
-                font-size: 4rem;
+                font-size: 3.5rem;
+                border-bottom: 1px solid grey;
             }
         }
         p{
