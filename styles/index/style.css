@@ -525,7 +525,7 @@ footer img {
 }
 
 .projects-container .project-card {
-  min-width: 55rem;
+  min-width: 35%;
   margin: auto;
   display: -ms-grid;
   display: grid;
@@ -547,7 +547,6 @@ footer img {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  height: auto;
   max-height: 25rem;
   max-width: 25rem;
   -ms-grid-column-align: center;

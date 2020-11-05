@@ -17,7 +17,7 @@
         border-color: white;
     }
     .project-card{
-        min-width:55rem;    
+        min-width:35%;    
         margin:auto;
         display:grid;
         align-items: center;
@@ -29,7 +29,6 @@
         img{ 
             margin:auto;
             grid-row: 1/2;
-            height: auto;
             max-height: 25rem;
             max-width: 25rem;
             justify-self: center;
