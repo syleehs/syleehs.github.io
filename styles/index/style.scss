@@ -146,19 +146,40 @@ a{
             }
         }
     }
-    .showcase{
+    .side-nav{
+        display:none;
+    }
+    .intro-container{
         grid-template-columns: 10% 1fr 10%;
-        img{
-            width: 100%;
-            object-fit: contain;
-        }
-        img,h2,.info{
-            text-align: center;
+        grid-template-rows: 2fr 0.25fr 2fr 0.5fr;
+        .headshot{
             grid-column:2/3;
+            grid-row:1/2;
+        }
+        .icons{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .info{
+            grid-column:2/3;
+            grid-row:3/4;
+        }
+        .learnmore{
+            grid-column: 2/3;
+            grid-row:4/5;
+            align-self: center;
         }
     }
-    .features{
-        align-items: center;
+    .about-container{   
+        button{
+            margin-bottom: 2rem;
+        }
+        .internships{
+            padding-left:0rem;
+        }
+    }
+    .projects-container{
+        flex-direction: column;
         h2{
             margin-top: 5rem;
         }
@@ -168,16 +189,6 @@ a{
             .card{
                 margin: 5rem 0rem
             }
-        }
-    }
-    .soon{
-        overflow: hidden;
-        img{
-            width: 70%;
-        }
-        h2{
-            font-size: 5rem;
-            text-align: center;
         }
     }
     footer{
