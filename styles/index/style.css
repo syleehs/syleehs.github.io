@@ -526,7 +526,7 @@ footer img {
 }
 
 .projects-container .project-card {
-  min-width: 35%;
+  min-width: 25%;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
